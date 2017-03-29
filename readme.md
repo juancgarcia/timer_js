@@ -1,5 +1,11 @@
 ## Stop Watch
 
+### This solution's notes
+
+My solution introduces a boolean variable to keep track if we're paused or running. The pause button toggles the state, but does so by leaving the interval running instead of clearing it. What problem can you think this introduces by not clearing and recreating the interval each time we press the pause or start buttons?
+
+### Original description follows
+
 We've been tasked with building out the behavior for a digital stopwatch, the interface for which is in `index.html`.
 
 [Here's a working version of the app](http://ga-wdi-exercises.github.io/timer_js/).
@@ -29,7 +35,7 @@ This is a tough assignment, so don't stress over meeting all the requirements. J
   - Stop the timer using `clearInterval()`.
   - Reset the timer.
   - Replace the time in your HTML with the original "Stop Watch" text.
-  
+
 ### Additional Resources
 
 The MDN documentation for [JavaScript Timers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Timers) is helpful. Check out the specific documentation for `setInterval` and `clearInterval`.
